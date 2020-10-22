@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+  <link rel="stylesheet" href="/public/css/a.css"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title || "shouye"}}</title>
+</head>
+
+<body>
+  <p>1212111111</p>
+  <img src="/public/img/fa.ico">
+  <a href="/post">go!</a>
+  
+  <ul>
+    {{ each comments }}
+    <li>{{ $value.name}} -------- {{ $value.message}}  ------- {{ $value.date}} </li>
+    {{ /each }}
+  </ul>
+
+</body>
+
+<script src="/public/js/a.js"></script>
+
+</html>

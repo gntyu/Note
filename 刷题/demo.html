@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo</title>
+</head>
+
+<body>
+  <div id="btnBox">
+    <input type="button" value="button_1">
+    <input type="button" value="button_2">
+    <input type="button" value="button_3">
+    <input type="button" value="button_4">
+    <input type="button" value="button_5">
+  </div>
+  <script type="text/javascript">
+    var btns = document.getElementById("btnBox").getElementsByTagName('input')
+    var l = btns.length
+    // btns.onclick=function(e){
+    //   if(e.target.nodeName="INPUT"){
+    //     alert(e.target.defaultValue.split('_')[1])
+    //   }
+    // }
+    for (let i = 0; i < l; i++) {
+      btns[i].onclick = function (){
+        alert(i)
+      }
+    }
+  </script>
+
+</body>
+
+</html>
