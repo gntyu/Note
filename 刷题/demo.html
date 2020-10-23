@@ -24,9 +24,10 @@
     //     alert(e.target.defaultValue.split('_')[1])
     //   }
     // }
-    for (let i = 0; i < l; i++) {
+    for (var i = 0; i < l; i++) {
+      console.log('循环：',i)
       btns[i].onclick = function (){
-        alert(i)
+        console.log('点击：',i)
       }
     }
   </script>
